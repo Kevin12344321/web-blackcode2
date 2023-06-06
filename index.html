@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body {
+    background-image: url("imagen4.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.container{
+display: flex;
+justify-content: space-between;
+
+}
+    /* Estilos para las pestañas */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    /* Estilos para los botones de las pestañas */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+    
+    /* Cambia el fondo del botón activo */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Estilos para el contenido de las pestañas */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #000000;
+      border-top: none;
+    }
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #000000;
+        }
+        tr:hover {
+            background-color: #000000;
+        }
+  </style>
+</head>
+<body>
+<div class="container">
+<img src="descarga1.png" alt="Imagen 1" width="300px" height="90px"><font color="white" size="100px">Flisol</font><img src="descarga2.png" alt="Imagen 2" width="300px" height="90px">
+</div>
+  <br>
+    <br>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">DIA 1</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">DIA 2</button>
+  </div>
+  
+  <div id="Tab1" class="tabcontent">
+    <font color="white"><h3>concurso de programacion</h3>
+    <p><table>
+        <tr>
+            <th>N°</th>
+            <th>HORARIO</th>
+            <th>ACTIVIDADES</th>
+            <th>A CARGO DE</th>
+            <th>LUGAR</th>
+            <th>PONENTE</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10:00</td>
+            <td>INAUGURACIÓN</td>
+            <td></td>
+            <td>Auditorio principal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10:30</td>
+            <td>Ponencia UPA</td>
+            <td>Hablemos de Kali Linux</td>
+            <td></td>
+            <td>Diego Reyes Ortega Rodrigo Eduardo</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>11:30</td>
+            <td>Ponencia informatica TESCHA</td>
+            <td>pendiente</td>
+            <td></td>
+            <td>Dr. Fabian Soberanes</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>12:30</td>
+            <td>Ponencia UPA</td>
+            <td>Introducción a Kali Linux</td>
+            <td></td>
+            <td>Alberto Vengas Aguilar Jesús Moisés Rivera Palma</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>11:00 - 14:00</td>
+            <td>EQUIPO 1</td>
+            <td>JURADO</td>
+            <td>LABORATORIO 1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>EQUIPO 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>EQUIPO 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>EQUIPO 4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>EQUIPO 5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </table></font></p>
+  </div>
+  
+  <div id="Tab2" class="tabcontent">
+    <font color="white"><h3>conferencias y actividades</h3>
+    <table>
+        <tr>
+            <th>N°</th>
+            <th>HORARIO</th>
+            <th>ACTIVIDADES - NOMBRE DEL PONENTE</th>
+            <th>CONFERENCIA</th>
+            <th>LUGAR</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>9:30-10:00</td>
+            <td>INICIO DE ACTIVIDADES-PRESENTACIÓN DE EMPRESAS Y INVITADOS ESPECIALES</td>
+            <td>MAESTRO DE CEREMONIAS/DIRECCION / JEFA</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>10:00-11:00</td>
+            <td>M. EN S. C. JUAN DE JESÚS MARTÍNEZ IBARRA L. EN M. JUAN CARLOS</td>
+            <td>Automatas y complejidad en Python</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>13:00-14:00</td>
+            <td>M. EN S. C. VICTOR HUGO DE LA O MARTÍNEZ</td>
+            <td>Archivo Json como recurso Assets en Android Studio</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>12:00-13:00</td>
+            <td>Jose Angel Barragan Lima</td>
+            <td>Hacking etico con Kali Linux</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>13:00-14:00</td>
+            <td>Dr. Marco Alberto Mendoza Pérez Prof de tiempo completo de UAEM Valle de Chalco</td>
+            <td>Simuladores de Robótica Open Source</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>14:00-15:00</td>
+            <td>JORGE VALENCIA TORIZ DIVULGADOR CIENTÍFICO- COMUNIDAD ASTRONÓMICA "LA NUIT"</td>
+            <td>La informática en la divulgación astronómica</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>15:00-16:00</td>
+            <td>Jessie Biker</td>
+            <td>Emociones sobre dos ruedas: profesionalización del marketing de influencers.</td>
+            <td>AUDITORIO PRINCIPAL</td>
+        </tr>
+        </table></font></p>
+  </div>
+  
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      
+      // Oculta todos los contenidos de las pestañas
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      
+      // Elimina la clase "active" de todos los botones de las pestañas
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      
+      // Muestra el contenido de la pestaña seleccionada y marca el botón como activo
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</body>
+</html>
